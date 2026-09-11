@@ -59,29 +59,46 @@
 
 // Console.WriteLine($"Здравствуйте, {enteredName} из группы {enteredGroup}!");
 
-Console.WriteLine();
-Console.WriteLine("Ввод чисел: Convert и Parse");
+// Console.WriteLine();
+// Console.WriteLine("Ввод чисел: Convert и Parse");
 
-Console.WriteLine("Введите ваш год рождения: ");
+// Console.WriteLine("Введите ваш год рождения: ");
+// string birthYearInput = Console.ReadLine();
+
+// int birthYearConvert = Convert.ToInt32(birthYearInput);
+// int birthYearParse = int.Parse(birthYearInput);
+
+// Console.WriteLine($"Convert.ToInt32: {birthYearConvert}");
+// Console.WriteLine($"int.Parse:       {birthYearParse}");
+// Console.WriteLine($"В 2030 году вам будет: {2030 - birthYearConvert} лет");
+
+// Console.WriteLine();
+// Console.WriteLine("Ввод чисел: TryParse");
+
+// Console.WriteLine("Введите количество прочитанных книг за семестр: ");
+// string booksInput = Console.ReadLine();
+
+// bool wasSuccessful = int.TryParse(booksInput, out int booksCount);
+
+// Console.WriteLine($"Удалось преобразовать: {wasSuccessful}");
+// Console.WriteLine($"Значение переменной booksCount: {booksCount}");
+
+
+
+
+
+Console.Write($"Введите ваше имя и фамилию: ");
+string enteredName = Console.ReadLine();
+Console.Write($"Введите вашу группу: ");
+string enteredGroupName = Console.ReadLine();
+Console.Write($"Введите ваш год рождения: ");
 string birthYearInput = Console.ReadLine();
+int enteredBirthYear = Convert.ToInt32(birthYearInput);
+Console.Write($"Введите ваш средний балл: ");
+string AverageScore = Console.ReadLine();
+double enteredAverageScore = Convert.ToDouble(AverageScore);
+Console.Write($"Введите вашу любимую букву: ");
+string LoveSymbol = Console.ReadLine();
+char enteredSymbol = Convert.ToChar(LoveSymbol);
 
-int birthYearConvert = Convert.ToInt32(birthYearInput);
-int birthYearParse = int.Parse(birthYearInput);
-
-Console.WriteLine($"Convert.ToInt32: {birthYearConvert}");
-Console.WriteLine($"int.Parse:       {birthYearParse}");
-Console.WriteLine($"В 2030 году вам будет: {2030 - birthYearConvert} лет");
-
-Console.WriteLine();
-Console.WriteLine("Ввод чисел: TryParse");
-
-Console.WriteLine("Введите количество прочитанных книг за семестр: ");
-string booksInput = Console.ReadLine();
-
-bool wasSuccessful = int.TryParse(booksInput, out int booksCount);
-
-Console.WriteLine($"Удалось преобразовать: {wasSuccessful}");
-Console.WriteLine($"Значение переменной booksCount: {booksCount}");
-
-
-
+Console.WriteLine($"имя: {enteredName}, группа: {enteredGroupName}, год: {enteredBirthYear}, балл: {enteredAverageScore}, буква: {enteredSymbol} ");
