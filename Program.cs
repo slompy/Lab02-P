@@ -112,3 +112,6 @@ Console.WriteLine($"Год рождения:           {myCourseNumber}");
 Console.WriteLine($"Средний балл:  {enteredAverageScore}");
 Console.WriteLine($"Стипендия положена (>= 4.0): {isScholarshipEligible}");
 Console.WriteLine($"Любимая буква:   {enteredSymbol}");
+
+
+a89a06
