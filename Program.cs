@@ -128,12 +128,34 @@ Console.OutputEncoding = System.Text.Encoding.UTF8;
 
 // System.Console.WriteLine($"ИМТ: {indexImt:F2}");
 
-Console.Write($"Введите ваше имя: ");
-string yourName = Console.ReadLine();
+// Console.Write($"Введите ваше имя: ");
+// string yourName = Console.ReadLine();
 
-Console.Write($"Введите вашу фамилию: ");
-string yourLastname = Console.ReadLine();
+// Console.Write($"Введите вашу фамилию: ");
+// string yourLastname = Console.ReadLine();
 
-// char enteredName = Convert.ToChar(yourName);
+// System.Console.WriteLine($"{yourLastname} {yourName[0]}.");
 
-System.Console.WriteLine($"{yourLastname} {yourName[0]}.");
+Console.WriteLine("Введите число: ");
+string numberInput = Console.ReadLine();
+
+bool wasSuccessful = int.TryParse(numberInput, out int numberCount);
+
+Console.WriteLine($"Удалось преобразовать: {wasSuccessful}");
+Console.WriteLine($"Значение: {numberCount}");
+
+Console.WriteLine("Введите десятичное число: ");
+string numberDoubleInput = Console.ReadLine();
+
+bool wasSuccessfull = double.TryParse(numberDoubleInput, out double numberDoubleCount);
+
+Console.WriteLine($"Удалось преобразовать: {wasSuccessfull}");
+Console.WriteLine($"Значение: {numberDoubleCount}");
+
+Console.WriteLine("Введите дату: ");
+string numberDateTimeInput = Console.ReadLine();
+
+bool wasSuccessfulll = DateTime.TryParse(numberDateTimeInput, out DateTime numberDateTimeCount);
+
+Console.WriteLine($"Удалось преобразовать: {wasSuccessfulll}");
+Console.WriteLine($"Значение: {numberDateTimeCount}");
