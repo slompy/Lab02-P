@@ -115,11 +115,25 @@ Console.OutputEncoding = System.Text.Encoding.UTF8;
 // Console.WriteLine($"Любимая буква:                  {enteredSymbol}");
 
 
-Console.Write($"Введите ваш рост в метрах: ");
-string yourHeight = Console.ReadLine();
-double enteredHeight = Convert.ToDouble(yourHeight);
-Console.Write($"Введите ваш вес в килограммах: ");
-string yourWeight = Console.ReadLine();
-double enteredWeight = Convert.ToDouble(yourWeight);
-double indexImt = enteredWeight / (enteredHeight * enteredHeight);
-System.Console.WriteLine($"ИМТ: {indexImt:F2}");
+// Console.Write($"Введите ваш рост в метрах: ");
+// string yourHeight = Console.ReadLine();
+
+// double enteredHeight = Convert.ToDouble(yourHeight);
+// Console.Write($"Введите ваш вес в килограммах: ");
+
+// string yourWeight = Console.ReadLine();
+// double enteredWeight = Convert.ToDouble(yourWeight);
+
+// double indexImt = enteredWeight / (enteredHeight * enteredHeight);
+
+// System.Console.WriteLine($"ИМТ: {indexImt:F2}");
+
+Console.Write($"Введите ваше имя: ");
+string yourName = Console.ReadLine();
+
+Console.Write($"Введите вашу фамилию: ");
+string yourLastname = Console.ReadLine();
+
+// char enteredName = Convert.ToChar(yourName);
+
+System.Console.WriteLine($"{yourLastname} {yourName[0]}.");
