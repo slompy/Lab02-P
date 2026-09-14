@@ -155,7 +155,7 @@ Console.WriteLine($"Значение: {numberDoubleCount}");
 Console.WriteLine("Введите дату: ");
 string numberDateTimeInput = Console.ReadLine();
 
-bool wasSuccessfulll = DateTime.TryParse(numberDateTimeInput, out DateTime numberDateTimeCount);
+bool wasSuccessfulll = DateTime.TryParse(numberDateEInput, out DateTime numberDateTimeCount);
 
 Console.WriteLine($"Удалось преобразовать: {wasSuccessfulll}");
-Console.WriteLine($"Значение: {numberDateTimeCount}");
+Console.WriteLine($"Значение: {numberDoubleCount}");
