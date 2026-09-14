@@ -1,4 +1,8 @@
-﻿// Console.WriteLine("Границы целочисленных типов");
+﻿Console.InputEncoding = System.Text.Encoding.UTF8;
+Console.OutputEncoding = System.Text.Encoding.UTF8;
+
+
+// Console.WriteLine("Границы целочисленных типов");
 // Console.WriteLine($"byte: {byte.MinValue} .. {byte.MaxValue}");
 // Console.WriteLine($"short: {short.MinValue} .. {short.MaxValue}");
 // Console.WriteLine($"int: {int.MinValue} .. {int.MaxValue}");
@@ -106,12 +110,10 @@ Console.WriteLine($"имя: {enteredName}, группа: {enteredGroupName}, г�
 const double scholarshipthreshold = 4.0;
 bool isScholarshipEligible = enteredAverageScore >= scholarshipthreshold;
 
-Console.WriteLine($"ФИО:            {enteredName}");
-Console.WriteLine($"Группа:         {enteredGroupName}");
-Console.WriteLine($"Год рождения:           {myCourseNumber}");
-Console.WriteLine($"Средний балл:  {enteredAverageScore}");
-Console.WriteLine($"Стипендия положена (>= 4.0): {isScholarshipEligible}");
-Console.WriteLine($"Любимая буква:   {enteredSymbol}");
-
-
-a89a06
+Console.WriteLine("===Визитная карточка студента===");
+Console.WriteLine($"ФИО:                            {enteredName}");
+Console.WriteLine($"Группа:                         {enteredGroupName}");
+Console.WriteLine($"Год рождения:                   {enteredBirthYear}, в 2030 году вам будет: {2030 - enteredBirthYear} лет");
+Console.WriteLine($"Средний балл:                   {enteredAverageScore}");
+Console.WriteLine($"Стипендия положена (>= 4.0):    {isScholarshipEligible}");
+Console.WriteLine($"Любимая буква:                  {enteredSymbol}");
