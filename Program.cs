@@ -87,33 +87,39 @@ Console.OutputEncoding = System.Text.Encoding.UTF8;
 // Console.WriteLine($"Удалось преобразовать: {wasSuccessful}");
 // Console.WriteLine($"Значение переменной booksCount: {booksCount}");
 
+// Console.Write($"Введите ваше имя и фамилию: ");
+// string enteredName = Console.ReadLine();
+// Console.Write($"Введите вашу группу: ");
+// string enteredGroupName = Console.ReadLine();
+// Console.Write($"Введите ваш год рождения: ");
+// string birthYearInput = Console.ReadLine();
+// int enteredBirthYear = Convert.ToInt32(birthYearInput);
+// Console.Write($"Введите ваш средний балл: ");
+// string AverageScore = Console.ReadLine();
+// double enteredAverageScore = Convert.ToDouble(AverageScore);
+// Console.Write($"Введите вашу любимую букву: ");
+// string LoveSymbol = Console.ReadLine();
+// char enteredSymbol = Convert.ToChar(LoveSymbol);
+
+// // Console.WriteLine($"имя: {enteredName}, группа: {enteredGroupName}, год: {enteredBirthYear}, балл: {enteredAverageScore}, буква: {enteredSymbol} ");
+
+// const double scholarshipthreshold = 4.0;
+// bool isScholarshipEligible = enteredAverageScore >= scholarshipthreshold;
+
+// Console.WriteLine("===Визитная карточка студента===");
+// Console.WriteLine($"ФИО:                            {enteredName}");
+// Console.WriteLine($"Группа:                         {enteredGroupName}");
+// Console.WriteLine($"Год рождения:                   {enteredBirthYear}, в 2030 году вам будет: {2030 - enteredBirthYear} лет");
+// Console.WriteLine($"Средний балл:                   {enteredAverageScore}");
+// Console.WriteLine($"Стипендия положена (>= 4.0):    {isScholarshipEligible}");
+// Console.WriteLine($"Любимая буква:                  {enteredSymbol}");
 
 
-
-
-Console.Write($"Введите ваше имя и фамилию: ");
-string enteredName = Console.ReadLine();
-Console.Write($"Введите вашу группу: ");
-string enteredGroupName = Console.ReadLine();
-Console.Write($"Введите ваш год рождения: ");
-string birthYearInput = Console.ReadLine();
-int enteredBirthYear = Convert.ToInt32(birthYearInput);
-Console.Write($"Введите ваш средний балл: ");
-string AverageScore = Console.ReadLine();
-double enteredAverageScore = Convert.ToDouble(AverageScore);
-Console.Write($"Введите вашу любимую букву: ");
-string LoveSymbol = Console.ReadLine();
-char enteredSymbol = Convert.ToChar(LoveSymbol);
-
-Console.WriteLine($"имя: {enteredName}, группа: {enteredGroupName}, год: {enteredBirthYear}, балл: {enteredAverageScore}, буква: {enteredSymbol} ");
-
-const double scholarshipthreshold = 4.0;
-bool isScholarshipEligible = enteredAverageScore >= scholarshipthreshold;
-
-Console.WriteLine("===Визитная карточка студента===");
-Console.WriteLine($"ФИО:                            {enteredName}");
-Console.WriteLine($"Группа:                         {enteredGroupName}");
-Console.WriteLine($"Год рождения:                   {enteredBirthYear}, в 2030 году вам будет: {2030 - enteredBirthYear} лет");
-Console.WriteLine($"Средний балл:                   {enteredAverageScore}");
-Console.WriteLine($"Стипендия положена (>= 4.0):    {isScholarshipEligible}");
-Console.WriteLine($"Любимая буква:                  {enteredSymbol}");
+Console.Write($"Введите ваш рост в метрах: ");
+string yourHeight = Console.ReadLine();
+double enteredHeight = Convert.ToDouble(yourHeight);
+Console.Write($"Введите ваш вес в килограммах: ");
+string yourWeight = Console.ReadLine();
+double enteredWeight = Convert.ToDouble(yourWeight);
+double indexImt = enteredWeight / (enteredHeight * enteredHeight);
+System.Console.WriteLine($"ИМТ: {indexImt:F2}");
